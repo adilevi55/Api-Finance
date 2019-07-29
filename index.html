@@ -1,0 +1,91 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div  class="parallax">
+        <h1>Api Finance</h1>
+    </div>     
+          
+    <div class="container" id="headButton">   
+            <div class="row">
+
+        <div class="card col-12 col-sm-4">
+            <img src="images/coins.jpg">
+            <button id="ConisButton">Coins</button>     
+        </div>            
+        <div class="card col-12 col-sm-4">
+            <img src="images/about.jpg">
+            <button id="aboutButton">about</button>
+        </div>    
+        <div class="card col-12 col-sm-4">
+            <img src="images/reports.jpg">
+            <button id="reportsButton" onclick="reports()">reports</button>              
+        </div>    
+                        
+    </div>
+</div>       
+        <div class="loading">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+        </div>
+
+                <div class="container" id="CoinsPage">
+                        <div id='searchCoinDiv'>
+                      
+                        </div>
+                        <div id="coinsSearchDivUpdate"></div>
+         
+                        <div class="col-sm" id="CoinsDiv"></div>
+    
+                </div>
+
+                <div class="container" id="reportsPage"> 
+                    <div id="chartContainer" style="height: 400px; width: 550px;"></div>
+                </div>
+                
+                <div class="container" id="aboutPage"></div>
+        
+            <!-- Trigger the modal with a button -->
+<button id="modelButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">   
+
+        <div class="modal-header">
+            <h4 class="modal-title">pick one coin</h4>
+        </div>
+
+        <div class="modal-body">
+          <div id="coinModalBody"></div>
+        </div>
+
+        <div class="modal-footer">
+            <button id="modalButton" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button id="modalButtonAutoClose" type="button" class="close" data-dismiss="modal" style="display: none">&times;</button>  
+        </div>
+
+</div>
+    </div>
+        </div>                        
+
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+            
+        </body>
+
+</html>
